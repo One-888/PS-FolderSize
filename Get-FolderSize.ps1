@@ -23,4 +23,5 @@ function Get-FolderSize
                       
 }
 
+# To execute
 Get-ChildItem -Directory -Recurse -EA 0 -Depth 0 | Get-FolderSize | select -First 25 | sort size -Descending | Format-Table -AutoSize
